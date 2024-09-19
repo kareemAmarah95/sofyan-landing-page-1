@@ -7,16 +7,27 @@
   box-sizing: border-box;
 }
 
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
 .slider li a:hover {
-  background: #5c66f1;
 }
 
 .slider li:hover a.animate-nav-link {
-  animation: animatedBackground 1s ease-in-out linear alternate-reverse;
-  -moz-animation: animatedBackground 1s linear infinite;
-  -webkit-animation: animatedBackground 1s linear infinite;
-  -ms-animation: animatedBackground 1s linear infinite;
-  -o-animation: animatedBackground 1s linear infinite;
+  animation-name: slide-right-animation;
+  animation-duration: 15s;
+  animation-timing-function: forwards;
+  animation-iteration-count: 1;
+  background: #5c66f1;
+  text-decoration: line-through;
+}
+.slider li a.animate-nav-link {
+  animation-name: slide-left-animation;
+  animation-duration: 6s;
+  animation-timing-function: backwards;
+  animation-iteration-count: 1;
 }
 
 .rounded-b-radius {
@@ -36,19 +47,70 @@
   background-color: #335cf4;
 }
 
-@keyframes animatedBackground {
+@keyframes slide-right-animation {
   0% {
-    trasform: translateX(0%);
+    transform: translateX(50%);
   }
-  50% {
-    trasform: translateX(50%);
+  6.66%,
+  26.64% {
+    transform: translateX(0%);
   }
+  33.30%,
   100% {
-    trasform: translateX(100%);
+    transform: translateX(-20%);
+  }
+}
+@keyframes slide-left-animation {
+  0% {
+    transform: translateX(20%);
+  }
+  6.66%,
+  26.64% {
+    transform: translateX(0%);
+  }
+  33.30%,
+  100% {
+    transform: translateX(0%);
   }
 }
 
 /* Games section */
+/* ======================================== */
+
+.aboutus-bg {
+  background-image: url("./assets/images/about-our-image.png");
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card figure {
+  /* background: red; */
+  height: 150% !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */

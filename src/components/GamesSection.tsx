@@ -13,131 +13,129 @@ import imgTwelve from "../assets/images/about-us-img-12.jpg";
 
 const GamesSection = () => {
   return (
-    <>
-      <div className="bg-white md:py-24 py-0">
-        <div className="container mx-auto py-5">
-          <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-x-0 md:gap md:gap-y-10 ">
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full w-full  border-none border-r-radius">
-                <img
-                  src={imgOne}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+    <div className="bg-white md:py-24 py-0">
+      <div className="container mx-auto py-5">
+        <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-x-0 md:gap md:gap-y-10 ">
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75  w-full  border-none border-r-radius">
+              <img
+                src={imgOne}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full md:w-full  border-none border-r-radius  bg-red-500">
-                <img
-                  src={imgTwo}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75 bg-red w-full md:w-full  border-none border-r-radius  bg-red-500">
+              <img
+                src={imgTwo}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgThree}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75 bg-red w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgThree}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgFour}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75  w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgFour}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150  bg-red w-full w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgFive}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75  w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgFive}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgSix}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75 w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgSix}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgSeven}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75 w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgSeven}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgEight}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75 w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgEight}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgNine}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75 w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgNine}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgTen}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75 w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgTen}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgEleven}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75 w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgEleven}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
+          </div>
 
-            <div className="flex justify-center items-center">
-              <div className="game-box transition-all hover:scale-150 bg-red w-full w-full border-none border-r-radius md:max-w-xl">
-                <img
-                  src={imgTwelve}
-                  className="w-full object-cover block h-auto"
-                  alt=""
-                />
-              </div>
+          <div className="flex justify-center items-center">
+            <div className="game-box transition-all hover:scale-75 w-full border-none border-r-radius md:max-w-xl">
+              <img
+                src={imgTwelve}
+                className="w-full object-cover block h-auto"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
