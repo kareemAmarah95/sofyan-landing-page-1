@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider li a:hover {
+  background: #5c66f1;
+}
+
+.slider li:hover a.animate-nav-link {
+  animation: animatedBackground 1s ease-in-out linear alternate-reverse;
+  -moz-animation: animatedBackground 1s linear infinite;
+  -webkit-animation: animatedBackground 1s linear infinite;
+  -ms-animation: animatedBackground 1s linear infinite;
+  -o-animation: animatedBackground 1s linear infinite;
+}
+
+.rounded-b-radius {
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: white;
+}
+.bg-img {
+  background-image: url("./assets/images/hero-img-original.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 100vh;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: #335cf4;
+}
+
+@keyframes animatedBackground {
+  0% {
+    trasform: translateX(0%);
+  }
+  50% {
+    trasform: translateX(50%);
+  }
+  100% {
+    trasform: translateX(100%);
+  }
+}
+
+/* Games section */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .bg-img {
+    /* height: 50vh; */
+    height: 80vh;
+    background-position: bottom center;
+    background-size: cover;
+  }
+
+  .space-in-mobile {
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+    height: 100%;
+  }
+
+  .slider {
+    /* width: 100%; */
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    right: 0;
+    width: 100vw;
+    border-top-left-radius: 20px;
+  }
+}
