@@ -35,7 +35,7 @@ import "swiper/css/pagination";
 // }
 const FirstSectionSwiper = () => {
   return (
-    <div className="py-5 bg-white">
+    <div className="bg-white py-10">
       <div className="container mx-auto ">
         <Swiper
           slidesPerView={1}
@@ -58,13 +58,16 @@ const FirstSectionSwiper = () => {
               slidesPerView: 4,
               spaceBetween: 40,
             },
-            1200: {},
-            1400: {
-              slidesPerView: 5,
+            1200: {
+              slidesPerView: 4,
               spaceBetween: 50,
             },
+            1400: {
+              slidesPerView: 4,
+              spaceBetween: 60,
+            },
           }}
-          className="mySwiper"
+          className="mySwiper p-[30px]"
         >
           <SwiperSlide>
             <div className="card bg-transparent w-96 h-96 shadow-xl ">

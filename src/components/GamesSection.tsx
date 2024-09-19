@@ -13,7 +13,7 @@ import imgTwelve from "../assets/images/about-us-img-12.jpg";
 
 const GamesSection = () => {
   return (
-    <div className="bg-white md:py-24 py-0">
+    <div className="bg-white ">
       <div className="container mx-auto py-5">
         <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-x-0 md:gap md:gap-y-10 ">
           <div className="flex justify-center items-center">

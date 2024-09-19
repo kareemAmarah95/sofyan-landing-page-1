@@ -4,6 +4,7 @@ import FirstSectionSwiper from "./components/FirstSectionSwiper";
 import GamesSection from "./components/GamesSection";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import SecondTestimonialCard from "./components/SecondTestimonialCard";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <FirstSectionSwiper />
       <AboutWorkTwo />
       <FirstSectionSwiper />
+      <SecondTestimonialCard />
     </>
   );
 }
