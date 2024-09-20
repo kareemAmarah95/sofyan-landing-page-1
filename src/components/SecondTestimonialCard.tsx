@@ -9,10 +9,11 @@ import "swiper/css/pagination";
 import "../index.css";
 
 // import required modules
-import { Navigation, Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Stars from "./Stars";
 const SecondTestimonialCard = () => {
   return (
     <div className="bg-white py-10">
@@ -20,8 +21,12 @@ const SecondTestimonialCard = () => {
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
-          navigation={true}
-          modules={[Navigation, Pagination]}
+          autoplay={{
+            delay: 6000,
+            disableOnInteraction: false,
+          }}
+          // navigation={true}
+          modules={[Autoplay, Pagination]}
           pagination={{
             clickable: true,
           }}
@@ -58,6 +63,14 @@ const SecondTestimonialCard = () => {
                   perferendis reiciendis eum quidem laudantium harum
                   exercitationem a doloremque ...
                 </p>
+                {/* stars-icons */}
+                <div className=" flex justify-center gap-x-2 items-center">
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -77,6 +90,13 @@ const SecondTestimonialCard = () => {
                   perferendis reiciendis eum quidem laudantium harum
                   exercitationem a doloremque ...
                 </p>
+                <div className=" flex justify-center gap-x-2 items-center">
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -96,6 +116,13 @@ const SecondTestimonialCard = () => {
                   perferendis reiciendis eum quidem laudantium harum
                   exercitationem a doloremque ...
                 </p>
+                <div className=" flex justify-center gap-x-2 items-center">
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -115,6 +142,13 @@ const SecondTestimonialCard = () => {
                   perferendis reiciendis eum quidem laudantium harum
                   exercitationem a doloremque ...
                 </p>
+                <div className=" flex justify-center gap-x-2 items-center">
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -134,6 +168,13 @@ const SecondTestimonialCard = () => {
                   perferendis reiciendis eum quidem laudantium harum
                   exercitationem a doloremque ...
                 </p>
+                <div className=" flex justify-center gap-x-2 items-center">
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -153,6 +194,13 @@ const SecondTestimonialCard = () => {
                   perferendis reiciendis eum quidem laudantium harum
                   exercitationem a doloremque ...
                 </p>
+                <div className=" flex justify-center gap-x-2 items-center">
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -172,6 +220,13 @@ const SecondTestimonialCard = () => {
                   perferendis reiciendis eum quidem laudantium harum
                   exercitationem a doloremque ...
                 </p>
+                <div className=" flex justify-center gap-x-2 items-center">
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -191,6 +246,13 @@ const SecondTestimonialCard = () => {
                   perferendis reiciendis eum quidem laudantium harum
                   exercitationem a doloremque ...
                 </p>
+                <div className=" flex justify-center gap-x-2 items-center">
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                  <Stars />
+                </div>
               </div>
             </div>
           </SwiperSlide>

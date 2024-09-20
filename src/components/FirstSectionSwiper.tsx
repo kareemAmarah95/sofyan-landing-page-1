@@ -1,5 +1,5 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperComponent, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -8,10 +8,16 @@ import "swiper/css/pagination";
 import "../index.css";
 
 // import required modules
-import { Navigation, Pagination } from "swiper/modules";
+// Pagination
+import { Pagination } from "swiper/modules";
 import imageSwiperOne from "../assets/images/swiper-1-img-1.jpg";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/swiper-bundle.css";
+import SwiperCore from "swiper"; // Import the SwiperCore type for instance typing
+import { ChevronLeft, ChevronRight } from "lucide-react"; // Import Lucide icons
+import { useState } from "react";
+
 // {
 /*  //   <div className="card bg-base-100 w-96 h-96 shadow-xl border border-2">
 
@@ -34,14 +40,55 @@ import "swiper/css/pagination";
 </div> */
 // }
 const FirstSectionSwiper = () => {
+  // Use SwiperCore for swiperInstance type
+  const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+
+  const handlePrev = () => {
+    if (swiperInstance) swiperInstance.slidePrev();
+  };
+
+  const handleNext = () => {
+    if (swiperInstance) swiperInstance.slideNext();
+  };
+
   return (
     <div className="bg-white py-10">
       <div className="container mx-auto ">
-        <Swiper
+        {/* Custom Navigation Buttons */}
+        <div className="flex justify-end gap-x-5 mt-4">
+          <button
+            onClick={handlePrev}
+            disabled={isBeginning}
+            className={`${
+              isBeginning ? "bg-gray-300" : "bg-[#335CF4]"
+            } p-3 rounded-full text-white`}
+          >
+            <ChevronLeft />
+          </button>
+          <button
+            onClick={handleNext}
+            disabled={isEnd}
+            className={`${
+              isEnd ? "bg-gray-300" : "bg-[#335CF4]"
+            } p-3 rounded-full text-white`}
+          >
+            <ChevronRight />
+          </button>
+        </div>
+        <SwiperComponent
+          onSwiper={(swiper: SwiperCore) => setSwiperInstance(swiper)} // Type swiper parameter
+          onSlideChange={(swiper: SwiperCore) => {
+            setIsBeginning(swiper.isBeginning);
+            setIsEnd(swiper.isEnd);
+          }}
           slidesPerView={1}
           spaceBetween={10}
-          navigation={true}
-          modules={[Navigation, Pagination]}
+          // navigation={true}
+          // Navigation
+          modules={[Pagination]}
+          //
           pagination={{
             clickable: true,
           }}
@@ -54,17 +101,17 @@ const FirstSectionSwiper = () => {
               slidesPerView: 3,
               spaceBetween: 30,
             },
-            992: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
-            1200: {
-              slidesPerView: 4,
-              spaceBetween: 50,
-            },
+            // 992: {
+            //   slidesPerView: 4,
+            //   spaceBetween: 40,
+            // },
+            // 1200: {
+            //   slidesPerView: 3,
+            //   spaceBetween: 40,
+            // },
             1400: {
               slidesPerView: 4,
-              spaceBetween: 60,
+              spaceBetween: 40,
             },
           }}
           className="mySwiper p-[30px]"
@@ -229,7 +276,7 @@ const FirstSectionSwiper = () => {
               </div>
             </div>
           </SwiperSlide>
-        </Swiper>
+        </SwiperComponent>
       </div>
     </div>
   );
