@@ -48,7 +48,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="navbar-center">
-            <a href="#" className="btn btn-ghost text-xl">
+            <a href="#" className="btn btn-ghost text-xl w-[111px] h-auto">
               <img
                 className="w-full h-full object-cover block"
                 src={mainNavImg}

@@ -57,7 +57,7 @@ const FirstSectionSwiper = () => {
     <div className="bg-white py-10">
       <div className="container mx-auto ">
         {/* Custom Navigation Buttons */}
-        <div className="flex justify-end gap-x-5 mt-4">
+        <div className="flex justify-end gap-x-5 mt-4 mr-5">
           <button
             onClick={handlePrev}
             disabled={isBeginning}

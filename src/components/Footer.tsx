@@ -1,5 +1,3 @@
-// import codeFooter from "../assets/images/cod-footer.png";
-// import spaceTwoFooter from "../assets/images/sbc2-footer.png";
 import footerLogo from "../assets/images/main-nav-logo.png";
 const Footer = () => {
   return (
@@ -94,7 +92,7 @@ const Footer = () => {
           </ul>
           <ul className="flex flex-col justify-between items-center md:items-end gap-y-7 ">
             {/* <div className="bg-img-footer"></div> */}
-            <div className="absolute w-[280px] h-[280px]   -top-11 z-0">
+            <div className="absolute w-[50px] h-[50px]   top-0 z-0">
               <img
                 className="w-full h-full object-contain block z-0 opacity-30"
                 src={footerLogo}
