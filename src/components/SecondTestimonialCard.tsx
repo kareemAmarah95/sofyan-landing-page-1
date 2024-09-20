@@ -1,4 +1,5 @@
 import testimonialImage from "../assets/images/testimonial-avatar_male.png";
+import testimonialImageTwo from "../assets/images/avatar_female.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -65,7 +66,7 @@ const SecondTestimonialCard = () => {
               <div className="w-20 h-20 absolute bottom-full translate-y-1/2 left-[40%]">
                 <img
                   className="absolute w-full h-full rounded-full  block object-cover "
-                  src={testimonialImage}
+                  src={testimonialImageTwo}
                   alt="alternative-image"
                 />
               </div>

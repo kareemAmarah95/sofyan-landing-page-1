@@ -1,9 +1,11 @@
 import AboutWork from "./components/AboutWork";
 import AboutWorkTwo from "./components/AboutWorkTwo";
 import FirstSectionSwiper from "./components/FirstSectionSwiper";
+import Footer from "./components/Footer";
 import GamesSection from "./components/GamesSection";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import ProductAdvantages from "./components/ProductAdvantages";
 import SecondTestimonialCard from "./components/SecondTestimonialCard";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <AboutWorkTwo />
       <FirstSectionSwiper />
       <SecondTestimonialCard />
+      <ProductAdvantages />
+      <Footer />
     </>
   );
 }
