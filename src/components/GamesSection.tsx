@@ -15,7 +15,7 @@ const GamesSection = () => {
   return (
     <div className="bg-white">
       <div className="container mx-auto py-16">
-        <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-x-0 md:gap md:gap-y-10 ">
+        <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-x-0 gap-y-8 md:gap-y-10 ">
           <div className="flex justify-center items-center">
             <div className="game-box transition-all hover:scale-75  w-full  border-none border-r-radius">
               <img

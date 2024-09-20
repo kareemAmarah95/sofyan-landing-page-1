@@ -5,8 +5,8 @@ const ProductAdvantages = () => {
   return (
     <div className="bg-white py-10">
       <div className="container mx-auto bg-white">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3">
-          <div className="box flex flex-col items-center justify-center">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-10">
+          <div className="box flex flex-col items-center justify-center ">
             <div className="w-[150px] h-[150px]">
               <img
                 src={productAdvThree}
