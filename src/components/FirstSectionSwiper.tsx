@@ -3,7 +3,6 @@ import { Swiper as SwiperComponent, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 
 import "../index.css";
 
@@ -18,27 +17,6 @@ import SwiperCore from "swiper"; // Import the SwiperCore type for instance typi
 import { ChevronLeft, ChevronRight } from "lucide-react"; // Import Lucide icons
 import { useState } from "react";
 
-// {
-/*  //   <div className="card bg-base-100 w-96 h-96 shadow-xl border border-2">
-
-  <figure>
-<img
-  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-  alt="Shoes"
-  className="block object-cover w-full h-full"
-/>
-</figure>
-<div className="card-body">
-<h2 className="card-title text-white">Shoes!</h2>
-<p>If a dog chews shoes whose shoes does he choose?</p>
-<div className="card-actions justify-end w-full">
-  <button className="btn btn-primary w-full rounded-lg">
-    Buy Now
-  </button>
-</div>
-</div>
-</div> */
-// }
 const FirstSectionSwiper = () => {
   // Use SwiperCore for swiperInstance type
   const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
